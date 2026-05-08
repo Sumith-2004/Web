@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid gray;
+            background-color: black;
+        }
+
+        .nav {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        main {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact h1 {
+            color: White;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        .contact-section {
+            background-color: whitesmoke;
+            display: flex;
+            gap: 60px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .our-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+            min-width: 120px;
+        }
+
+        .our-info a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            outline: none;
+        }
+
+        .our-info a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 250px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        label {
+            font-size: 13px;
+            color: gray;
+        }
+
+        input {
+            padding: 8px;
+            border: 1px solid gray;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: gray;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <a href="./index.html">Home</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About</a>
+        </div>
+    </nav>
+    <main>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <section class="contact-section">
+                <div class="our-info">
+                    <a href="#">Instagram</a>
+                    <a href="tel:+1234567890">Call Us</a>
+                    <a href="mailto:abc@gmail.com">Mail Us</a>
+                    <a href="#">FaceBook</a>
+                </div>
+                <div class="client-info">
+                    <form action="#" method="post" class="form">
+
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
