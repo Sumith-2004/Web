@@ -1,0 +1,59 @@
+@use 'variables';
+
+.about-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-box {
+    background-color: variables.$hero-sction;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-box h1 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: variables.$bg-black;
+}
+
+.about-box p {
+    font-size: 14px;
+    color: variables.$primary;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.arts {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.artstyles {
+    background-color: variables.$bg-black;
+    color: gold;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+footer {
+    background-color: variables.$bg-black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid darkgray;
+}
+
+footer p {
+    color: variables.$primary;
+}

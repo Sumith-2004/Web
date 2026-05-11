@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <nav class="h-[70px] bg-black text-white flex justify-between items-center px-[20px]">
+        <h1>Dashboard</h1>
+        <div class="flex gap-4">
+            <a href="#">Overview</a>
+            <a href="#">Charts</a>
+            <a href="#">Reports</a>
+        </div>
+    </nav>
+    <main>
+        <div class="grid grid-flow-col grid-rows-2 gap-4 p-4 shadow-md">
+            <section class=" rounded-xl p-6 shadow-md  bg-gradient-to-r from-indigo-600 to-purple-500">
+                <h2 class="font-bold mb-2">Total Revenue</h2>
+                <p class="text-gray-600 text-xl text-white">$80000</p>
+            </section>
+            <section class="rounded-xl p-6 shadow-md bg-gradient-to-r from-indigo-600 to-purple-400 ">
+                <h2 class="font-bold mb-2">
+                    New Leads
+                </h2>
+                <p class=" text-xl text-white">1200</p>
+            </section>
+            <section class="rounded-xl p-6 shadow-md bg-gradient-to-r from-blue-900 to-blue-500">
+                <h2 class=" font-bold mb-2">
+                    Lead -> Opportunity (Monthly)
+                </h2>
+                <p class="text-xl text-white">48%</p>
+            </section>
+            <section class="rounded-xl p-6 shadow-md bg-gradient-to-r from-blue-900 to-blue-400">
+                <h2 class=" font-bold mb-2">Lost Leads</h2>
+                <p class="text-xl text-white">201</p>
+            </section>
+            <section class="rounded-xl p-6 shadow-md bg-gradient-to-r from-blue-500 to-blue-300">
+                <h2 class=" font-bold mb-2">
+                    Reach
+                </h2>
+                <p class=" text-xl text-white">80%</p>
+            </section>
+            <section class="rounded-xl p-6 shadow-md bg-gradient-to-r from-blue-400 to-blue-100">
+                <h2 class=" font-bold mb-2">
+                    Customer Count
+                </h2>
+                <p class="text-xl text-white">652</p>
+            </section>
+            <section class="rounded-xl p-6 shadow-md bg-gradient-to-r from-green-300 to-green-500">
+                <h2 class=" font-bold mb-2">
+                    Target Count (Lead)
+                </h2>
+                <p class=" text-xl text-white">500</p>
+            </section>
+            <p class="bg-basecol">Hi</p>
+        </div>
+        <div class="flex justify-around rounded-xl shadow-md py-4">
+            <section class="p-4 rounded-xl shadow-lg border border-gray-200">
+                <h2 class="text-xl">New Leads Report</h2>
+                <table class="min-w-full bg-white text-sm text-left text-gray-600">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-4">Lead</th>
+                            <th class="px-6 py-4">Name</th>
+                            <th class="px-6 py-4">Created By</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-medium text-gray-400">LEAD-001</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Sam</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Ram Kumar</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-400">LEAD-002</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Ashok</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Balaji</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-400">LEAD-003</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Ram Charan</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Rani</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="p-4 rounded-xl shadow-lg border border-gray-200">
+                <h2>User Reports</h2>
+                <table class="min-w-full bg-white text-sm text-left text-gray-600">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-4">User Id</th>
+                            <th class="px-6 py-4">Name</th>
+                            <th class="px-6 py-4">Owned Leads</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-medium text-gray-400">U-001</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Ram Kumar</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">30</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-400">U-002</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Balaji</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">28</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-400">U-003</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">Rani</td>
+                            <td class="px-6 py-4 font-medium text-gray-400">16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

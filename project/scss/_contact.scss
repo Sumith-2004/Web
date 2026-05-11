@@ -1,0 +1,90 @@
+ @use 'variables';
+ 
+ main {
+     background-color: variables.$bg-black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ .contact {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .contact h1 {
+     color: variables.$text-white;
+     font-size: 28px;
+     letter-spacing: 1px;
+ }
+
+ .contact-section {
+     background-color: variables.$hero-sction;
+     display: flex;
+     gap: 60px;
+     padding: 25px;
+     border-radius: 12px;
+ }
+
+ .our-info {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 12px;
+     min-width: 120px;
+ }
+
+ .our-info a {
+     text-decoration: none;
+     color: variables.$bg-black;
+     font-size: 18px;
+     outline: none;
+ }
+
+ .our-info a:hover {
+     color: variables.$bg-black;
+     font-weight: bold;
+ }
+
+ .form {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     width: 250px;
+ }
+
+ .field {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+ }
+
+ label {
+     font-size: 13px;
+     color: variables.$primary;
+ }
+
+ input {
+     padding: 8px;
+     border: 1px solid variables.$primary;
+     border-radius: 6px;
+     outline: none;
+ }
+
+ button {
+     padding: 10px;
+     border: none;
+     border-radius: 6px;
+     background-color: variables.$bg-black;
+     color: variables.$text-white;
+     cursor: pointer;
+     transition: 0.2s;
+ }
+
+ button:hover {
+     background-color: variables.$primary;
+     color: variables.$bg-black;
+ }

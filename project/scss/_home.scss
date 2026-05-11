@@ -1,0 +1,72 @@
+@use 'variables';
+
+.hero-section {
+    height: 80vh;
+    width: 100%;
+    background-color: variables.$hero-sction;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 28px;
+    color: variables.$bg-black;
+}
+
+.hero-section p {
+    max-width: 600px;
+    color:variables.$primary;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btns {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.card-btn,
+.about-btn {
+    background-color: variables.$bg-black;
+    color: variables.$text-white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.5s ease;
+}
+
+.hero-section:hover .card-btn,
+.hero-section:hover .about-btn {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.card-btn:hover,
+.about-btn:hover {
+    background-color: variables.$primary;
+}
+
+footer {
+    background-color: variables.$bg-black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-content {
+    position: relative;
+}
+
+footer p {
+    color: variables.$primary;
+}
